@@ -1,0 +1,21 @@
+body{
+   
+    background-color: black;
+}
+div {
+    display: flex;
+}
+
+#toggleBtn {
+    width: 200px;
+    height: 200px;
+    background-image: url("./img/boff.jpg");
+    background-size: cover;
+}
+
+#bulbImg {
+    width: 600px;
+    height: 800px;
+    background-image: url("./img/off.jpg");
+    background-size: cover;
+}

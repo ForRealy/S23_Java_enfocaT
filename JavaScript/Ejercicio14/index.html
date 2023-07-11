@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form action="#">
+      <div class="container">
+        <div class="equisde">
+          <div class="texto">
+            <p id="uno">Add Item</p>
+            <button onclick="addEmoji('push')" class="boton tamaños">
+              push
+            </button>
+            <button onclick="addEmoji('unshift')" class="boton tamaños">
+              unshift
+            </button>
+            <button onclick="addEmoji('insert')" class="boton tamaños">
+              insert at
+            </button>
+            <input class="numeros input" type="number" min="1" max="8" />
+          </div>
+        </div>
+        <div class="equisde">
+          <div class="texto">
+            <p>Remove Item</p>
+            <button onclick="removeEmoji('pop')" class="boton tamaños">
+              pop
+            </button>
+            <button onclick="removeEmoji('shift')" class="boton tamaños">
+              shift
+            </button>
+            <button onclick="removeEmoji('remove')" class="boton tamaños">
+              remove at
+            </button>
+            <input class="numeros input" type="number" min="1" max="8" />
+          </div>
+          <h2 id="emoji">[ ]</h2>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

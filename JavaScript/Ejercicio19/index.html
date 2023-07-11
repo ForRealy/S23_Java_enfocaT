@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stats">
+      <div class="stat">
+        <h3>Comer</h3>
+        <progress
+          class="progress"
+          id="comerProgress"
+          value="100"
+          max="100"
+        ></progress>
+        <button onclick="doAction('comer')">Comer</button>
+      </div>
+      <div class="stat">
+        <h3>Dormir</h3>
+        <progress
+          class="progress"
+          id="dormirProgress"
+          value="100"
+          max="100"
+        ></progress>
+        <button onclick="doAction('dormir')">Dormir</button>
+      </div>
+      <div class="stat">
+        <h3>Jugar</h3>
+        <progress
+          class="progress"
+          id="jugarProgress"
+          value="100"
+          max="100"
+        ></progress>
+        <button onclick="doAction('jugar')">Jugar</button>
+      </div>
+      <div class="stat">
+        <h3>Pelear</h3>
+        <progress
+          class="progress"
+          id="pelearProgress"
+          value="100"
+          max="100"
+        ></progress>
+        <button onclick="doAction('pelear')">Pelear</button>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <img class="slide" src="./img/stand1.png" alt="" />
+      <img class="slide" src="./img/stand1.png" alt="" />
+      <img class="slide" src="./img/stand2.png" alt="" />
+      <img class="slide" src="./img/stand3.png" alt="" />
+      <img class="slide" src="./img/stand4.png" alt="" />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+ El bucle do-while se ejecutará al menos una vez,
+ ya que la condición se evalúa al final del bucle.
+ En este caso, el bucle se ejecutará dos veces.
+ La primera vez se entrará en el bloque if y se
+ mostrará el valor 0 por consola. En las siguientes
+ iteraciones, se entrará en el bloque else y se mostrarán
+ los valores incrementados de numero por consola.
