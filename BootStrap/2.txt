@@ -1,0 +1,42 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/mixins";
+
+$grid-breakpoints: (
+  aa: 0,
+  ab: 250px,
+  ac: 500px,
+  ad: 750px,
+  ae: 1000px,
+  af: 1250px,
+  ag: 1500px,
+  ah: 1750px,
+  ai: 2000px,
+);
+
+@include media-breakpoint-between(aa, ab) {
+    *{
+        background-color: black;
+        color: white;
+    }
+}
+@include media-breakpoint-between(ac, ad) {
+    *{
+        background-color: black;
+        color: white;
+    }
+}
+@include media-breakpoint-between(ae, af) {
+    *{
+        background-color: black;
+        color: white;
+    }
+}
+@include media-breakpoint-between(ag, ah) {
+    *{
+        background-color: black;
+        color: white;
+    }
+}

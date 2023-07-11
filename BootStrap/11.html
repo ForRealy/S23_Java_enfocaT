@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid display-5 text-white text-center grid gap-3">
+      <!-- Test-->
+      <div class="row">
+        <div class="col bg-info"></div>
+      </div>
+      <!-- Header -->
+      <div class="row">
+        <div class="col bg-warning border border-5 border-white">Header</div>
+      </div>
+
+      <!-- 1, 2, 3, 4-->
+      <div class="row">
+        <div class="col-6 col-sm-3 border border-5 border-white bg-primary offset-md-3">1</div>
+        <div class="col-6 col-sm-3 border border-5 border-white bg-primary">2</div>
+        <div class="col-3 d-none d-md-block"></div>
+        <div class="col-6 col-sm-3 border border-5 border-white bg-primary">3</div>
+        <div class="col-6 col-sm-3 border border-5 border-white bg-primary offset-md-6">4</div>
+      </div>
+      <div class="row">
+        <div class="col bg-info border border-5 border-white d-md-none d-none d-sm-block">Tablet</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-3 order-md-4 bg-secondary border border-5 border-white">a</div>
+        <div class="col-6 col-sm-3 order-md-3 bg-secondary border border-5 border-white">b</div>
+        <div class="col-6 col-sm-3 order-md-2 bg-secondary border border-5 border-white">c</div>
+        <div class="col-6 col-sm-3 order-md-1 bg-secondary border border-5 border-white">d</div>
+      </div>
+      <div class="row">
+        <div class="col bg-info border border-5 border-white d-none d-md-block">Desktop</div>
+      </div>
+      <div class="row">
+        <div class="col bg-info border border-5 border-white d-md-none d-sm-none">Mobile</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-none d-sm-block col-sm-6 border border-5 border-white bg-success offset-md-3 order-sm-2 order-md-1">:(</div>
+        <div class="col-md-3 col-sm-6 border border-5 border-white bg-success order-sm-1 order-md-2">:D</div>
+      </div>
+      <div class="row">
+        <div class="col d-none d-sm-block bg-warning border border-5 border-white">Footer</div>
+      </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+//@import "./node_modules/bootstrap/scss/utilities";  Descomentar cuando trabajemos con la versión 5.1 de Bootstrap
+@import "./node_modules/bootstrap/scss/maps";  //Comentar cuando no trabajemos con la versión 5.3 de Bootstrap
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

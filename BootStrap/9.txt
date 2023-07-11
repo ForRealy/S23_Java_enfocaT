@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #parteuno{
+            height: 20vh;
+        }
+    </style>
+  </head>
+  <body>
+    <div  class="container-fluid display-5 text-white text-center">
+        <div id="parteuno" class="row row-col-3">
+            <div class="col-4 align-self-start bg-success border">.align-self-start</div>
+            <div class="col-4 align-self-center bg-success border">.align-self-center</div>
+            <div class="col-4 align-self-end bg-success border">.align-self-end</div>
+        </div>
+    </div>
+    <div class="container-fluid display-5 text-white text-center">
+        <div class="row d-flex justify-content-start">
+            <div class="col-3 bg-warning border">One of two columns</div>
+            <div class="col-3 bg-warning border">One of two columns</div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-3 bg-info border">One of two columns</div>
+            <div class="col-3 bg-info border">One of two columns</div>
+        </div>
+        <div class="row d-flex justify-content-end">
+            <div class="col-3 bg-danger border">One of two columns</div>
+            <div class="col-3 bg-danger border">One of two columns</div>
+        </div>
+        <div class="row d-flex justify-content-around">
+            <div class="col-3 bg-secondary border">One of two columns</div>
+            <div class="col-3 bg-secondary border">One of two columns</div>
+        </div>
+        <div class="row d-flex justify-content-between">
+            <div class="col-3 bg-primary border">One of two columns</div>
+            <div class="col-3 bg-primary border">One of two columns</div>
+        </div>
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-3 bg-danger border">One of two columns</div>
+            <div class="col-3 bg-danger border">One of two columns</div>
+        </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+//@import "./node_modules/bootstrap/scss/utilities";  Descomentar cuando trabajemos con la versión 5.1 de Bootstrap
+@import "./node_modules/bootstrap/scss/maps";  //Comentar cuando no trabajemos con la versión 5.3 de Bootstrap
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

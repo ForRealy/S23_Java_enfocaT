@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid display-5 text-white text-center">
+        <div class="row">
+            <div class="col bg-success border">.col</div>
+            <div class="col-lg-auto bg-success border">Columna de ancho variable (.col-autoo)</div>
+            <div class="col bg-success border">.col</div>
+        </div>
+        <div class="row">
+            <div class="col bg-success border">.col</div>
+            <div class="col-lg-auto bg-success border">Otra columna de ancho variable (.col-auto)</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-auto bg-success border">Otra columna de ancho variable (.col-auto)</div>
+            <div class="col bg-success border">.col</div>
+            <div class="col bg-success border">.col</div>
+            <div class="col bg-success border">.col</div>
+            <div class="col bg-success border">.col</div>
+            <div class="col bg-success border">.col</div>
+        </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+//@import "./node_modules/bootstrap/scss/utilities";  Descomentar cuando trabajemos con la versión 5.1 de Bootstrap
+@import "./node_modules/bootstrap/scss/maps";  //Comentar cuando no trabajemos con la versión 5.3 de Bootstrap
+@import "./node_modules/bootstrap/scss/mixins";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
