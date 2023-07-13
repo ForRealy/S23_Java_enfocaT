@@ -1,0 +1,16 @@
+.container {
+    overflow: auto;
+  }
+  
+  .text {
+    float: left;
+    width: 35%;
+  }
+  
+  .image {
+    float: left;
+  }
+  img{
+    width: 700px;
+  }
+  

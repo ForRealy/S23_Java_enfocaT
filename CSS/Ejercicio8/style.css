@@ -1,0 +1,9 @@
+span{
+    padding: 50px;
+    width: 500px;
+    display: block;
+    border-top: 5px green dotted;
+    border-right: 15px blue dashed;
+    border-bottom: 5px red solid;
+    border-left: 15px black double;
+}

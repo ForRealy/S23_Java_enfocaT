@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containersd {
+  display: flex;
+}
+.circulo {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 5px;
+}
+.mezcla {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 5px;
+  mix-blend-mode: multiply;
+}
+.primario {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid black;
+}
+p {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.rojo {
+  background-color: red;
+}
+.azul {
+  background-color: blue;
+}
+.amarillo {
+  background-color: yellow;
+}
+.verde {
+  background-color: rgb(0, 255, 0);
+}
+.rosa {
+  background-color: magenta;
+}
+.cian {
+  background-color: cyan;
+}
+#mezcla {
+  position: relative;
+}
+#mezcla .mezcla {
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+#mezcla #rojo {
+  background-color: red;
+  top: 100;
+  left: 0;
+}
+
+#mezcla .verde {
+  background-color: rgb(0, 255, 0);
+  top: 50px;
+  left: 100px;
+}
+
+#mezcla .azul {
+  background-color: blue;
+  top: 150px;
+  left: 50px;
+}

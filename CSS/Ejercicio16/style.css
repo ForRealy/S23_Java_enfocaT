@@ -1,0 +1,30 @@
+header {
+    float: inline-start;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+nav {
+    float: inline-start;
+    width: 100%;
+    height: 35px;
+    background-color: blue;
+}
+section {
+    float: left;
+    width: 65%;
+    height: 500px;
+    background-color: gray;
+}
+aside {
+    float: right;
+    width: 32%;
+    height: 500px;
+    background-color: pink;
+}
+footer {
+    float:left;
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+}

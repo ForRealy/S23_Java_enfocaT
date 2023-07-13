@@ -1,0 +1,20 @@
+* {
+    background-color: #a6e094;
+}
+h1{
+    color: #f07360;
+}
+span:hover{
+    color: #bf2a7f;
+}
+#parrafo {
+    column-rule-style: solid;
+    column-rule-width: 2px;
+    column-rule-color: red;
+    column-gap: 40px;
+    column-count: 3;
+}
+p::selection {
+    background-color: #e8e490; 
+    color: #f07360; 
+  }

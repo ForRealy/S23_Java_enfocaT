@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    background-color: aliceblue;
+}
+
+#title{
+    background-color: antiquewhite;
+}
+table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10;
+    border: 5px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+caption{
+    border: none;
+}
+table th, table td {
+    text-align: center;
+}
+table td {
+    border-bottom: 2px solid;
+    border-left: 1px solid;
+  }
+table th:first-child {
+    border-top-left-radius: 0;
+}
+table th:last-child {
+    border-top-right-radius: 0;
+}

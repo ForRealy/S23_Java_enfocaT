@@ -1,0 +1,18 @@
+p {
+    position:  relative;
+    left: 40%;
+    justify-content: center;
+    width: 200px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 25px;
+}
+#p1{
+    text-align: left;
+}
+#p2{
+    text-align: center;
+}
+#p3{
+    text-align: right;
+}

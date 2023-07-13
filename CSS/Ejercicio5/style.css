@@ -1,0 +1,51 @@
+* {
+    background-color: #fbffcc;
+}
+p {
+    color: #f67975;
+}
+#title-1 {
+    color: #f13565;
+}
+.bg-yellow {
+    color: #ddc996;
+}
+[id] {
+    font-size: 40px;
+}
+[id="title-1"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+[href="https://www.yahoo.com"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+[class^="title"] {
+    color: #f13565;
+}
+[href$=".com"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+  [class^="title"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+[href*="127"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+[href^="http"] {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a, p, h1 {
+    background-color: #caf2be;
+}
+main p {
+    background-color: #fbffcc;
+}
+h1 + * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1 ~ * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main > * {
+    font-weight: bold;
+}        

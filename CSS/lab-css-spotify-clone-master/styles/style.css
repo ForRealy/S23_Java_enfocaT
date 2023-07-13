@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+button {
+  width: 80px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  border-radius: 10vw;
+}
+
+.download {
+  margin-right: 1vw;
+}
+
+button:hover {
+  background-color: #00b172;
+  color: white;
+}
+
+menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#logo {
+  margin-left: 1vw;
+  height: 50px;
+  width: 160px;
+}
+.banner {
+  background-image: url("../images/landing.jpg");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  width: 100vw;
+}
+.banner-content {
+  text-align: center;
+  color: white;
+}
+.mein h2 {
+  margin: 0 auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  width: 18vw;
+  border-bottom: 3px solid #00b172;
+}
+
+.recuadros {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  color: #00b172;
+}
+.cuadro {
+  width: 28vw;
+}
+.cuadro h3 p {
+  width: 2vw;
+}
+.musica img {
+  height: 100px;
+  width: 100px;
+}
+.device img {
+  height: 150px;
+  width: 150px;
+}
+
+.calidad img {
+  height: 100px;
+  width: 150px;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  margin: 0px;
+  align-items: center;
+}
+.logo img {
+  margin: 0px;
+  width: 200px;
+  height: 200px;
+}
+.panelmusical {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.panelmusical img {
+  align-self: baseline;
+  margin: 0px;
+  width: 450px;
+  height: 750px;
+}
+.verde {
+  margin-bottom: 10vh;
+  width: 85vw;
+  display: flex;
+  background-color: #00b172;
+}
+.verde div {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.texto {
+  color: white;
+}
+.texto h1 {
+  border-bottom: 3px solid white;
+}
