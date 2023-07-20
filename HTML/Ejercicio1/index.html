@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi página web</h1>
+      </header>
+      <main>
+        <section id="inicio">
+          <h2>Inicio</h2>
+          <p>Este es el inicio de mi página web.</p>
+        </section>
+        <section id="nosotros">
+          <h2>Nosotros</h2>
+          <p>Este es el apartado sobre nosotros.</p>
+        </section>
+        <section id="contacto">
+          <h2>Contacto</h2>
+          <p>Este es el apartado de contacto.</p>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright © 2023 Mi página web</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+      $(function() {
+        $('a[href^="#"]').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({
+            scrollTop: $(this.hash).offset().top
+          }, 500);
+        });
+      });
+      </script>
+</body>
+</html>
