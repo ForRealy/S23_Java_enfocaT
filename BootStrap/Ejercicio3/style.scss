@@ -1,0 +1,10 @@
+$primary: tomato;
+$secondary:  red;
+$success:    blue;
+$info:       green;
+$warning:    yellow;
+$danger:     grey;
+$light:      cyan;
+$dark:       purple;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
