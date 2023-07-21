@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <h1>Quiz</h1>
+  <form action="quiz.php" method="post">
+    <input type="hidden" name="question_number" value="1">
+    <p>
+      ¿Cuál de las siguientes opciones no es un editor de código?
+    </p>
+    <ul>
+      <li>vim</li>
+      <li>vscode</li>
+      <li>emacs</li>
+      <li>Word</li>
+    </ul>
+    <input type="radio" name="answer" value="vim">vim
+    <input type="radio" name="answer" value="vscode">vscode
+    <input type="radio" name="answer" value="emacs">emacs
+    <input type="radio" name="answer" value="word">Word
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+
+</html>
