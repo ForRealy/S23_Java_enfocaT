@@ -9,23 +9,56 @@
 
 <body>
   <h1>Quiz</h1>
-  <form action="quiz.php" method="post">
-    <input type="hidden" name="question_number" value="1">
-    <p>
-      ¿Cuál de las siguientes opciones no es un editor de código?
-    </p>
-    <ul>
-      <li>vim</li>
-      <li>vscode</li>
-      <li>emacs</li>
-      <li>Word</li>
-    </ul>
-    <input type="radio" name="answer" value="vim">vim
-    <input type="radio" name="answer" value="vscode">vscode
-    <input type="radio" name="answer" value="emacs">emacs
-    <input type="radio" name="answer" value="word">Word
-    <input type="submit" value="Enviar">
+  <form id="quizForm">
+    <!-- Pregunta 1 -->
+    <fieldset>
+      <legend>Opciones de respuesta</legend>
+      <p>
+        ¿Cuál de las siguientes opciones no es un editor de código?
+      </p>
+      <ul>
+        <li><label for="answer-vim"><input type="radio" name="answer0" id="answer-vim" value="vim">vim</label></li>
+        <li><label for="answer-vscode"><input type="radio" name="answer0" id="answer-vscode" value="vscode">vscode</label></li>
+        <li><label for="answer-emacs"><input type="radio" name="answer0" id="answer-emacs" value="emacs">emacs</label></li>
+        <li><label for="answer-word"><input type="radio" name="answer0" id="answer-word" value="word">Word</label></li>
+      </ul>
+    </fieldset>
+
+    <!-- Pregunta 2 -->
+    <fieldset>
+      <legend>Opciones de respuesta</legend>
+      <p>
+        ¿Cuál es la capital de Francia?
+      </p>
+      <ul>
+        <li><label for="answer-paris"><input type="radio" name="answer1" id="answer-paris" value="paris">París</label></li>
+        <li><label for="answer-london"><input type="radio" name="answer1" id="answer-london" value="london">Londres</label></li>
+        <li><label for="answer-madrid"><input type="radio" name="answer1" id="answer-madrid" value="madrid">Madrid</label></li>
+        <li><label for="answer-berlin"><input type="radio" name="answer1" id="answer-berlin" value="berlin">Berlín</label></li>
+      </ul>
+    </fieldset>
+
+    <!-- Pregunta 3 -->
+    <fieldset>
+      <legend>Opciones de respuesta</legend>
+      <p>
+        ¿Cuál es el número pi?
+      </p>
+      <ul>
+        <li><label for="answer-3.14"><input type="radio" name="answer2" id="answer-3.14" value="3.14">3.14</label></li>
+        <li><label for="answer-2.718"><input type="radio" name="answer2" id="answer-2.718" value="2.718">2.718</label></li>
+        <li><label for="answer-1.618"><input type="radio" name="answer2" id="answer-1.618" value="1.618">1.618</label></li>
+        <li><label for="answer-1.414"><input type="radio" name="answer2" id="answer-1.414" value="1.414">1.414</label></li>
+      </ul>
+    </fieldset>
+
+    <button type="button" onclick="submitQuiz()">Enviar</button>
   </form>
+
+  <div id="results" style="display: none;">
+    <h2>Resultado del Quiz</h2>
+    <div id="quizResult"></div>
+  </div>
 </body>
 
 </html>

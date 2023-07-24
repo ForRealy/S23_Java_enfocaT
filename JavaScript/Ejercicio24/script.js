@@ -1,68 +1,50 @@
-var questions = [
-    {
-      question: "¿Cuál de las siguientes opciones no es un editor de código?",
-      answers: [
-        "vim",
-        "vscode",
-        "emacs",
-        "Word"
-      ],
-      correctAnswer: "Word"
-    },
-    {
-      question: "¿Cuál es la capital de Francia?",
-      answers: [
-        "París",
-        "Londres",
-        "Madrid",
-        "Berlín"
-      ],
-      correctAnswer: "París"
-    },
-    {
-      question: "¿Cuál es el número pi?",
-      answers: [
-        "3.14",
-        "2.718",
-        "1.618",
-        "1.414"
-      ],
-      correctAnswer: "3.14"
+function submitQuiz() {
+  var form = document.getElementById("quizForm");
+  var totalQuestions = form.elements.length - 1; // Excluding the submit button
+  var score = 0;
+
+  for (var i = 0; i < totalQuestions; i++) {
+    var question = form.elements["answer" + i];
+    if (question.checked) {
+      var userAnswer = question.value;
+      var correctAnswer = getCorrectAnswer(i);
+      var questionNumber = i + 1;
+
+      var resultElement = document.getElementById("quizResult");
+      resultElement.innerHTML += "<p>Pregunta " + questionNumber + ": " + getQuestion(i) + "</p>";
+
+      if (userAnswer === correctAnswer) {
+        resultElement.innerHTML += "<p>Tu respuesta: " + userAnswer + " <strong>(Correcto)</strong></p>";
+        score++;
+      } else {
+        resultElement.innerHTML += "<p>Tu respuesta: " + userAnswer + " <strong>(Incorrecto)</strong></p>";
+      }
+
+      resultElement.innerHTML += "<p>Respuesta correcta: " + correctAnswer + "</p>";
+      resultElement.innerHTML += "<hr>";
     }
+  }
+
+  var totalScoreElement = document.getElementById("results");
+  totalScoreElement.style.display = "block";
+  totalScoreElement.innerHTML = "<h2>Resultado del Quiz</h2>";
+  totalScoreElement.innerHTML += "<p>Tu puntuación final es: " + score + " / " + totalQuestions + "</p>";
+}
+
+function getQuestion(index) {
+  var questions = [
+    "¿Cuál de las siguientes opciones no es un editor de código?",
+    "¿Cuál es la capital de Francia?",
+    "¿Cuál es el número pi?"
   ];
-  
-  var currentQuestion = 0;
-  var correctAnswers = 0;
-  
-  function showQuestion() {
-    var question = questions[currentQuestion];
-    document.getElementById("question").innerHTML = question.question;
-    for (var i = 0; i < question.answers.length; i++) {
-      var answer = document.getElementById("answer" + i);
-      answer.innerHTML = question.answers[i];
-    }
-  }
-  
-  function submitAnswer() {
-    var answer = document.querySelector("input[name=answer]:checked");
-    if (answer.value == questions[currentQuestion].correctAnswer) {
-      correctAnswers++;
-      alert("¡Correcto!");
-    } else {
-      alert("Incorrecto!");
-    }
-    currentQuestion++;
-    if (currentQuestion < questions.length) {
-      showQuestion();
-    } else {
-      displayResults();
-    }
-  }
-  
-  function displayResults() {
-    var results = document.getElementById("results");
-    results.innerHTML = "Tu puntuación es " + correctAnswers + " de " + questions.length;
-  }
-  
-  showQuestion();
-  
+  return questions[index];
+}
+
+function getCorrectAnswer(index) {
+  var correctAnswers = [
+    "Word",
+    "París",
+    "3.14"
+  ];
+  return correctAnswers[index];
+}
