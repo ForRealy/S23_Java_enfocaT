@@ -1,3 +1,4 @@
+/* general */
 body {
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
@@ -18,9 +19,51 @@ button {
   border: none;
   border-radius: 10vw;
 }
+/* menu */
+.menud{
+  margin-right: 3vw;
+  width: 50px;
+  height: 50px;
+}
+.menud img {
+  width: 50px;
+  height: 50px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-.download {
-  margin-right: 1vw;
+.dropbtn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  max-width: 100%;
+  overflow: auto;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 button:hover {
@@ -40,6 +83,7 @@ menu {
   height: 50px;
   width: 160px;
 }
+/* banner */
 .banner {
   background-image: url("../images/landing.jpg");
   position: relative;
@@ -55,6 +99,7 @@ menu {
   text-align: center;
   color: white;
 }
+/* recuadros */
 .mein h2 {
   margin: 0 auto;
   margin-top: 5vh;
@@ -93,6 +138,7 @@ h3 {
   width: 150px;
 }
 
+/*parte verde */
 .panel {
   display: flex;
   justify-content: center;
@@ -135,4 +181,160 @@ h3 {
 }
 .texto h1 {
   border-bottom: 3px solid white;
+}
+  /* Diseño para dispositivos extra pequeños */
+@media (max-width: 575px) {
+  .logo{
+    display: none;
+  }
+  .verde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+.recuadros {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.cuadro {
+  width: 28vw;
+}
+.musica img {
+  height: 200px;
+  width: 200px;
+}
+.device img {
+  height: 200px;
+  width: 220px;
+}
+
+.calidad img {
+  height: 200px;
+  width: 250px;
+}
+}
+/* Diseño para dispositivos móviles */
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo{
+    display: none;
+  }
+  .verde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+}
+.recuadros {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.cuadro {
+  width: 28vw;
+}
+.musica img {
+  height: 200px;
+  width: 200px;
+}
+.device img {
+  height: 200px;
+  width: 220px;
+}
+
+.calidad img {
+  height: 200px;
+  width: 250px;
+}
+}
+
+/* Diseño para dispositivos de escritorio */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo{
+    display: none;
+  }
+  .verde {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+}
+.recuadros {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cuadro {
+  width: 28vw;
+}
+.musica img {
+  height: 200px;
+  width: 200px;
+}
+.device img {
+  height: 200px;
+  width: 220px;
+}
+
+.calidad img {
+  height: 200px;
+  width: 250px;
+}
+}
+
+/* Diseño para pantallas pequeñas */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo{
+    display: none;
+  }
+  .verde {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65vw;
+  }
+  .recuadros {
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cuadro {
+    width: 28vw;
+  }
+  .musica img {
+    height: 200px;
+    width: 200px;
+  }
+  .device img {
+    height: 200px;
+    width: 220px;
+  }
+  
+  .calidad img {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+/* Diseño para pantallas medianas */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .logo img {
+    margin: 0px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Diseño para pantallas grandes */
+@media (min-width: 1400px) {
+  .logo img {
+    margin: 0px;
+    width: 400px;
+    height: 400px;
+  }
 }
