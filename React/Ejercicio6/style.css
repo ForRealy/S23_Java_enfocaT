@@ -1,0 +1,13 @@
+.articulo {
+    border: 1px solid black;
+  }
+  
+  .articulo h2 {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .articulo p {
+    font-size: 16px;
+    font-family: Comic Sans MS;
+  }
